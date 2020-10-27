@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 print("opencv imported")
 
+# This is a great test for git
+
 frame_width = 640
 frame_height = 480
 cap = cv2.VideoCapture(0)  # 0号摄像头是默认摄像头
