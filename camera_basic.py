@@ -4,7 +4,7 @@ print("opencv imported")
 
 # This is a great test for git
 # 我可以好好试一下
-# 今天再试一下
+# 今天再试一下，规范一下一个工程同时推送到gitee和github的配置
 
 frame_width = 640
 frame_height = 480
