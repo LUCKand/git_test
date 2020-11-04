@@ -1,4 +1,14 @@
 
+<!-- TOC -->
+
+- [换阿里源](#换阿里源)
+- [树莓派端配置git](#树莓派端配置git)
+    - [完整操作](#完整操作)
+- [PC端的配置](#pc端的配置)
+    - [完全使用git命令的方式](#完全使用git命令的方式)
+    - [使用vscode的图形界面](#使用vscode的图形界面)
+
+<!-- /TOC -->
 
 # 换阿里源
     sudo nano /etc/apt/sources.list
@@ -79,7 +89,9 @@
         # 示例：git push pi master
         git push pi_git_learning master
 
-    push之后的第一个参数是远程存储器在本地的名字，第二个参数是分支名称，push是要输入对应用户的密码的
+    push之后的第一个参数是远程存储器在本地的名字，第二个参数是分支名称，push是要输入对应用户的密码的。
+    
+    因为没有配置ssh，所以只能通过命令行提交（而且每次都要输入密码，如果直接用vscode的“推送到”会报错“no permission”）
 
 *   clone代码
 
@@ -94,3 +106,10 @@
         git pull origin master
 
     从远程仓库`origin`的`master`分支拉取，因为从网站上clone下的项目也默认为`origin`的名字，所以pull其他项目也是这条命令
+
+
+***
+
+## 使用vscode的图形界面
+
+首先要配置树莓派上git服务的ssh
