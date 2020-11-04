@@ -7,7 +7,8 @@ print("opencv imported")
 # 今天再试一下，规范一下一个工程同时推送到gitee和github的配置
 
 # 今天是树莓派的测试
-# 试一下git pull和git fetch的区别，再试一下？？？
+# 试一下git pull和git fetch的区别，再试一下
+# 我在这里提交
 
 frame_width = 640
 frame_height = 480
@@ -19,5 +20,5 @@ cap.set(10, 130)  # 设置亮度
 while True:
     success, img = cap.read()
     cv2.imshow("video", img)
-    if cv2.waitKey(10) & 0xFF == ord('q'):
+    if cv2.waitKey(20) & 0xFF == ord('q'):
         break
