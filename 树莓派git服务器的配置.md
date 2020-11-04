@@ -1,16 +1,16 @@
 
 <!-- TOC -->
 
-- [换阿里源](#换阿里源)
-- [树莓派端配置git](#树莓派端配置git)
-    - [完整操作](#完整操作)
-- [PC端的配置](#pc端的配置)
-    - [完全使用git命令的方式](#完全使用git命令的方式)
-    - [使用vscode的图形界面](#使用vscode的图形界面)
+- [1. 换阿里源](#1-换阿里源)
+- [2. 树莓派端配置git](#2-树莓派端配置git)
+    - [2.1. 完整操作](#21-完整操作)
+- [3. PC端的配置](#3-pc端的配置)
+    - [3.1. 完全使用git命令的方式](#31-完全使用git命令的方式)
+    - [3.2. 使用vscode的图形界面](#32-使用vscode的图形界面)
 
 <!-- /TOC -->
 
-# 换阿里源
+# 1. 换阿里源
     sudo nano /etc/apt/sources.list
     #将原有内容用#注释掉
     deb http://mirrors.aliyun.com/raspbian/raspbian/ buster main contrib non-free rpi
@@ -28,7 +28,7 @@
 
 ***
 ***
-# 树莓派端配置git
+# 2. 树莓派端配置git
     sudo apt-get install git-core
 树莓派本身的系统应该是有git的，接下来添加git用户，需要sudo命令
     
@@ -62,7 +62,7 @@
 
 
 ***
-## 完整操作
+## 2.1. 完整操作
 
     sudo adduser --system --shell /bin/bash --gecos 'git version control by pi' --group --home /home/git luckgit
     sudo passwd luckgit
@@ -73,8 +73,8 @@
     git --bare init
 ***
 
-# PC端的配置
-## 完全使用git命令的方式
+# 3. PC端的配置
+## 3.1. 完全使用git命令的方式
 *   添加新的远程主机
 
         # 示例：git remote add pi git@[your IP]:/home/git/test.git
@@ -110,6 +110,6 @@
 
 ***
 
-## 使用vscode的图形界面
+## 3.2. 使用vscode的图形界面
 
 首先要配置树莓派上git服务的ssh
