@@ -5,3 +5,6 @@
 
 /test/
 !/test/no.py
+
+!/test1/no.py
+/test1/
