@@ -2,3 +2,6 @@
 /Core/Inc/
 /Core/Src/
 /Core/
+
+/test/
+!/test/no.py
