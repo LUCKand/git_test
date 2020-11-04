@@ -6,6 +6,8 @@ print("opencv imported")
 # 我可以好好试一下
 # 今天再试一下，规范一下一个工程同时推送到gitee和github的配置
 
+# 今天是树莓派的测试
+
 frame_width = 640
 frame_height = 480
 cap = cv2.VideoCapture(0)  # 0号摄像头是默认摄像头
