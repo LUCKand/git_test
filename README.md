@@ -3,6 +3,8 @@
 
     启用这个工程，学会同步到github和gitee  
     学会gitignore文件的配置  
+    [gitignore tutorials and example](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)  
+    [gitignore official document](https://git-scm.com/docs/gitignore)  
     学会git一些常用命令
 
 *   2020.11.04

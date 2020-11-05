@@ -2,9 +2,8 @@
 /Core/Inc/
 /Core/Src/
 /Core/
+# 忽略整个目录，/开头，/结尾
 
-/test/
+# 忽略/test/目录，但保留它下面的no.py文件
+/test/*
 !/test/no.py
-
-!/test1/no.py
-/test1/
