@@ -113,3 +113,19 @@
 ## 3.2. 使用vscode的图形界面
 
 首先要配置树莓派上git服务的ssh
+
+
+***
+***
+
+# 其他
+
+## 禁用休眠
+[一个很好的博客](https://www.cnblogs.com/xiaoqianbook/p/11945271.html)
+
+    sudo nano /etc/lightdm/lightdm.conf
+找到[Seat:*]这一项，在下面的‘#xserver-command=X’删除前面的注释符#，修改为以下
+
+    xserver-command=X -s 0-dpms
+
+其中，-s 参数：设置屏幕保护不启动，0 数字零，-dpms 参数：关闭电源节能管理。
