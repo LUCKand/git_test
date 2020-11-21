@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": false,
-            "pythonPath": "C://Prog//Python//Python38-32//python.exe", //改成自己的路径
+            "python": "C://Prog//Python//Python38-32//python.exe", //改成自己的路径
             "program": "${file}",
             "cwd": "${workspaceRoot}",
             "console": "integratedTerminal",

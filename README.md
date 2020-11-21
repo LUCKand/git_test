@@ -75,5 +75,5 @@
 
     权衡之下选择gogs试试。
 
-    GRANT ALL PRIVILEGES ON gogs.* TO 'gogsuser'@'localhost' IDENTIFIED BY '19991226';
+    `今天已完成gogs git服务器的配置了`，可以使用了。
 
