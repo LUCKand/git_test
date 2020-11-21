@@ -25,7 +25,7 @@
         cat ~/.ssh/id_rsa.pub
         ssh -T git@gitee.com
 
-    然后再再本地的仓库添加远程git服务器，遇到问题百度。推送到github就不用输入密码了。
+    然后再在本地的仓库添加远程git服务器，遇到问题百度。推送到github就不用输入密码了。
 
     >待办：  
     树莓派上面添加ssh key  
@@ -65,3 +65,15 @@
 
     好家伙，找到了与树莓派之间互传文件的方法，明天解决gitolite的配置
     [pscp](https://www.jianshu.com/p/101d42cd686b)
+
+        pscp -P 22 c:\wap.txt pi@192.168.1.147:/home/pi/
+
+
+*   2020.11.21
+
+    very good，发现树莓派搭建git服务器的选择不只有gitolite，还有gogs，gita，gitlab等等。[对比](http://softlab.sdut.edu.cn/blog/subaochen/2016/01/github_like_softwares/)
+
+    权衡之下选择gogs试试。
+
+    GRANT ALL PRIVILEGES ON gogs.* TO 'gogsuser'@'localhost' IDENTIFIED BY '19991226';
+
